@@ -9,18 +9,30 @@ using std::string;
 class Account
 {
 public:
+	
+	friend class SavingsAccount;
+	friend class CreditAccount;
+	friend class HomeLoanAccount;
+	enum accountType { SAVINGS, CREDIT, HOME_LOAN };
 
-	friend class Account_Savings;
-
-	Account(float balance);
+	Account(int accountID,
+			string accountName,
+			double interestRate, 
+			double balance);
 	~Account(void);
-	string getAccountNumber();
-	string getAccountName();
-	string getBalance();
+	int getAccountID(void);
+	void setAccountName(string accountName);
+	string getAccountName(void);
+	double getInterestRate(void);
+	void setInterestRate(double interestRate);
+	double getBalance(void);
 
 private:
-	string _accountNumber;
+	int _accountID;
+	int _customerID;
+	accountType _type;
 	string _accountName;
-	float _balance;
+	double _interestRate;
+	double _balance;
 };
 #endif

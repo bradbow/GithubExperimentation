@@ -69,17 +69,17 @@
     <ClCompile Include="AccountServices.cpp">
       <Filter>Accounts\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Account_Credit.cpp">
-      <Filter>Accounts\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Account_HomeLoan.cpp">
-      <Filter>Accounts\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Account_Savings.cpp">
-      <Filter>Accounts\Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Transaction.cpp">
       <Filter>Transactions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SavingsAccount.cpp">
+      <Filter>Accounts\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CreditAccount.cpp">
+      <Filter>Accounts\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HomeLoanAccount.cpp">
+      <Filter>Accounts\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,17 +107,17 @@
     <ClInclude Include="AccountServices.h">
       <Filter>Accounts\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Account_Credit.h">
-      <Filter>Accounts\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Account_HomeLoan.h">
-      <Filter>Accounts\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Account_Savings.h">
-      <Filter>Accounts\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Transaction.h">
       <Filter>Transactions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SavingsAccount.h">
+      <Filter>Accounts\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditAccount.h">
+      <Filter>Accounts\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HomeLoanAccount.h">
+      <Filter>Accounts\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

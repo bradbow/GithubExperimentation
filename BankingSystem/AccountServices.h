@@ -1,7 +1,7 @@
 #include "Account.h"
-#include "Account_Savings.h"
-#include "Account_HomeLoan.h"
-#include "Account_Credit.h"
+#include "SavingsAccount.h"
+#include "HomeLoanAccount.h"
+#include "CreditAccount.h"
 
 #ifndef _ACCOUNT_SERVICES_H
 #define _ACCOUNT_SERVICES_H
@@ -14,24 +14,32 @@ using std::string;
 class AccountServices
 {
 public:
-	enum accountType { SAVINGS, CREDIT, HOME_LOAN };
-	enum repaymentOption { WEEKLY, F_NIGHTLY, MONTHLY };
+
+	enum accountType{ SAVINGS_ACC, CREDIT_ACC, HOME_LOAN_ACC};
+
 	AccountServices(void);
 	~AccountServices(void);
-	Account *createAccount(accountType type, string details[]);
+	void getInstance(void);
+	SavingsAccount *createSavingsAccount (int accountID, string accountName, 
+                              double interestRate, double balance);
+	CreditAccount *createCreditCardAccount (int accountID, string accountName, 
+                                   double interestRate, double balance,
+                                   double overdraftLimit);
+	HomeLoanAccount *createHomeLoanAccount (int accountID, string accountName, 
+                                   double interestRate, double balance,
+                                   string propertyAddress, 
+                                   HomeLoanAccount::repaymentOption option, 
+                                   double minimumRepayment);
+
+
+	void closeAccount(int accountID);
+	void changeAccountDetails(accountType type, string details[ ], int accountID);
+	Account getAccount(int accountID);
+	//void performTransaction(Transaction* account) throws Exception;
+	list<Account*> getCustomerAccounts(int customerID);
+
 private:
-	string generateAccountNumber(accountType type);
-	string generateLastDigits(accountType type);
-	string intToStr(int toConvert);
-	static float startingBalance;
-	double savingsInterestRate;
-	static const int CREDIT_REPAYMENT_RATE = 0;
-	float creditOverdraftLimit;
-	static const int HOME_LOAN_MIN_REPAYMENT = 0;
-	static const int ACC_NUMBER_LENGTH = 9;
-	static int savingsCounter;
-	static int creditCounter;
-	static int homeLoanCounter;
+
 };
 #endif
 

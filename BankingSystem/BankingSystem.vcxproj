@@ -80,9 +80,9 @@
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="AccountServices.cpp" />
-    <ClCompile Include="Account_Credit.cpp" />
-    <ClCompile Include="Account_HomeLoan.cpp" />
-    <ClCompile Include="Account_Savings.cpp" />
+    <ClCompile Include="CreditAccount.cpp" />
+    <ClCompile Include="HomeLoanAccount.cpp" />
+    <ClCompile Include="SavingsAccount.cpp" />
     <ClCompile Include="BankingSystem.cpp" />
     <ClCompile Include="Form1.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
@@ -109,9 +109,9 @@
   <ItemGroup>
     <ClInclude Include="Account.h" />
     <ClInclude Include="AccountServices.h" />
-    <ClInclude Include="Account_Credit.h" />
-    <ClInclude Include="Account_HomeLoan.h" />
-    <ClInclude Include="Account_Savings.h" />
+    <ClInclude Include="CreditAccount.h" />
+    <ClInclude Include="HomeLoanAccount.h" />
+    <ClInclude Include="SavingsAccount.h" />
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>

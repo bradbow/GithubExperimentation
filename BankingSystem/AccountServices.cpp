@@ -11,63 +11,52 @@ AccountServices::~AccountServices(void)
 {
 }
 
-Account *AccountServices::createAccount(accountType type, string details[]){
+void getInstance(void);
+SavingsAccount *AccountServices::createSavingsAccount (int accountID, string accountName, 
+									double interestRate, double balance){
 
-	switch(type){
-		
-	case SAVINGS:
-		savingsCounter++;
-		return new Account_Savings(
-			startingBalance,
-			savingsInterestRate);
-	case CREDIT:
-		creditCounter++;
-		return new Account_Credit(
-			startingBalance,
-			CREDIT_REPAYMENT_RATE,
-			creditOverdraftLimit);
-	case HOME_LOAN:
-		homeLoanCounter++;
-		return new Account_HomeLoan(
-			startingBalance,
-			details[0],
-			WEEKLY, //TODO : exchange placeholder
-			HOME_LOAN_MIN_REPAYMENT
-			);
-	}
+	return new SavingsAccount(	accountID, 
+								accountName, 
+								interestRate, 
+								balance);
+}
+CreditAccount *AccountServices::createCreditCardAccount (int accountID, string accountName, 
+                                   double interestRate, double balance,
+								   double overdraftLimit){
+
+	return new CreditAccount(	accountID,
+								accountName, 
+								interestRate, 
+								balance, 
+								overdraftLimit);
+}
+HomeLoanAccount *AccountServices::createHomeLoanAccount (int accountID, string accountName, 
+                                   double interestRate, double balance,
+                                   string propertyAddress, 
+                                   HomeLoanAccount::repaymentOption option, 
+								   double minimumRepayment){
+
+	return new HomeLoanAccount(	accountID,
+								accountName,
+								interestRate,
+								balance,
+								propertyAddress,
+								option,
+								minimumRepayment);
 }
 
-string AccountServices::generateAccountNumber(accountType type){
 
-	string accountNumber = intToStr(type);
-	string lastDigits = generateLastDigits(type);
+void AccountServices::closeAccount(int accountID){
 
-	for (int i = 1; i < (int)(ACC_NUMBER_LENGTH - lastDigits.length()); i++){
-		
-		accountNumber += intToStr(0);
-	}
-	accountNumber += lastDigits;
-	return accountNumber;
 }
+void AccountServices::changeAccountDetails(accountType type, string details[ ], int accountID){
 
-string AccountServices::generateLastDigits(accountType type){
-
-	switch(type){
-	case SAVINGS:
-		return intToStr(savingsCounter);
-	case CREDIT:
-		return intToStr(creditCounter);
-	case HOME_LOAN:
-		return intToStr(homeLoanCounter);
-	}
 }
+Account getAccount(int accountID);
+//void AccountServices::performTransaction(Transaction* account) throws Exception{}
+//list<Account*> AccountServices::getCustomerAccounts(int customerID){}
 
-string AccountServices::intToStr(int toConvert){
 
-	string str;
-	stringstream out;
-	out << (int)toConvert;
-	return out.str();
-}
+
 
 
