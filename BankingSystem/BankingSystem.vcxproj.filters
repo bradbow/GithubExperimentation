@@ -13,6 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Users">
+      <UniqueIdentifier>{05573c82-af97-40db-bb4c-299a87423ccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Users\Header Files">
+      <UniqueIdentifier>{05fdbe8e-218b-4b6a-81ff-1d68eb670940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Users\Source Files">
+      <UniqueIdentifier>{01c7e215-b158-48c5-9029-e497519a22c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Accounts">
+      <UniqueIdentifier>{d4f51f5e-6c06-4a57-b47b-470798e4d8b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Accounts\Header Files">
+      <UniqueIdentifier>{aea467c7-61c8-4a73-be14-23070d392cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Accounts\Source Files">
+      <UniqueIdentifier>{01d08975-50bc-43cf-a4ef-b04474f6bdd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transactions">
+      <UniqueIdentifier>{43b9cfbb-9bd9-4089-b42b-d360ffaf0326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transactions\Header Files">
+      <UniqueIdentifier>{5c97f765-50f9-459d-b725-54e6d545b2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transactions\Source Files">
+      <UniqueIdentifier>{4c8b91eb-e053-485a-a3e5-d496692bf81a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -21,76 +48,76 @@
     <ClCompile Include="BankingSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Account.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Account_Savings.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Account_Credit.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Account_HomeLoan.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Transaction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="User.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="User_Customer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="User_BankClerk.cpp">
+    <ClCompile Include="Form1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="UserServices.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Users\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Users\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User_BankClerk.cpp">
+      <Filter>Users\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User_Customer.cpp">
+      <Filter>Users\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Account.cpp">
+      <Filter>Accounts\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AccountServices.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Accounts\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Form1.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Account_Credit.cpp">
+      <Filter>Accounts\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Account_HomeLoan.cpp">
+      <Filter>Accounts\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Account_Savings.cpp">
+      <Filter>Accounts\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transaction.cpp">
+      <Filter>Transactions\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Account.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Account_Savings.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Account_Credit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Account_HomeLoan.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Transaction.h">
+    <ClInclude Include="Form1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="User.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="User_Customer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="User_BankClerk.h">
-      <Filter>Header Files</Filter>
+      <Filter>Users\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UserServices.h">
-      <Filter>Header Files</Filter>
+      <Filter>Users\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User_BankClerk.h">
+      <Filter>Users\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User_Customer.h">
+      <Filter>Users\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Account.h">
+      <Filter>Accounts\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AccountServices.h">
-      <Filter>Header Files</Filter>
+      <Filter>Accounts\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Form1.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Account_Credit.h">
+      <Filter>Accounts\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Account_HomeLoan.h">
+      <Filter>Accounts\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Account_Savings.h">
+      <Filter>Accounts\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transaction.h">
+      <Filter>Transactions\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
