@@ -1,21 +1,24 @@
+//User.cpp
 #include "User.h"
 
-
-User::User(string userName, string password) :
+// constructor
+// precondition: valid user details passed in
+// postcondition: user is created
+User::User(int userName, string password) :
 _userName(userName), _password(password)
 {
 }
 
-
+// destructor
+// precondition: none
+// postcondition: memory deallocated
 User::~User(void)
 {
 }
 
-string User::getUserName(){
+// precondition: none
+// postcondition: userName returned
+int User::getUserName(){
 
-	return this->_userName;
-}
-string User::getPassWord(){
-	
-	return this->_password;
+	return _userName;
 }

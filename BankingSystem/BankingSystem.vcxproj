@@ -103,8 +103,8 @@
     <ClCompile Include="Transaction.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="UserServices.cpp" />
-    <ClCompile Include="User_BankClerk.cpp" />
-    <ClCompile Include="User_Customer.cpp" />
+    <ClCompile Include="BankClerk.cpp" />
+    <ClCompile Include="Customer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
@@ -119,8 +119,8 @@
     <ClInclude Include="Transaction.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserServices.h" />
-    <ClInclude Include="User_BankClerk.h" />
-    <ClInclude Include="User_Customer.h" />
+    <ClInclude Include="BankClerk.h" />
+    <ClInclude Include="Customer.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="BankingSystem.rc" />

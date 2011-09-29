@@ -57,12 +57,6 @@
     <ClCompile Include="User.cpp">
       <Filter>Users\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="User_BankClerk.cpp">
-      <Filter>Users\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="User_Customer.cpp">
-      <Filter>Users\Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Account.cpp">
       <Filter>Accounts\Source Files</Filter>
     </ClCompile>
@@ -81,6 +75,12 @@
     <ClCompile Include="HomeLoanAccount.cpp">
       <Filter>Accounts\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BankClerk.cpp">
+      <Filter>Users\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Customer.cpp">
+      <Filter>Users\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -93,12 +93,6 @@
       <Filter>Users\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UserServices.h">
-      <Filter>Users\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="User_BankClerk.h">
-      <Filter>Users\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="User_Customer.h">
       <Filter>Users\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Account.h">
@@ -118,6 +112,12 @@
     </ClInclude>
     <ClInclude Include="HomeLoanAccount.h">
       <Filter>Accounts\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>Users\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BankClerk.h">
+      <Filter>Users\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
