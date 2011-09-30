@@ -4,10 +4,11 @@
 // ever one AccountServices
 
 #include "AccountServices.h"
+#include "Customer.h"
 #include <sstream>
+
 using std::stringstream;
 
-bool AccountServices::instanceFlag = false;
 AccountServices* AccountServices::_accountServicesInstance = NULL;
 
 // precondition: none
@@ -15,10 +16,9 @@ AccountServices* AccountServices::_accountServicesInstance = NULL;
 // available one is created then returned
 AccountServices *AccountServices::instance(void){
 
-	if(!instanceFlag){
+	if(_accountServicesInstance == NULL){
 	
 		_accountServicesInstance = new AccountServices;
-		instanceFlag = true;
 		return _accountServicesInstance;
 	}		
 	return _accountServicesInstance;
@@ -75,11 +75,17 @@ void AccountServices::closeAccount(int accountID){
 // postcondition: old details are replaced by new
 void AccountServices::changeAccountDetails(accountType type, string details[ ], int accountID){
 
+	Account *change = getAccount(accountID);
+
 }
 
-// precondition: valid accountID passed in
-// postcondition: Account matching accountID returned
-Account getAccount(int accountID);
+//// precondition: valid accountID passed in
+//// postcondition: Account matching accountID returned
+//Account *getAccount(int accountID){
+//
+//	Account *account = new Account(accountID, "accountName", 0.0, 0.0);
+//	return account;
+//}
 
 // precondition: valid transaction passed in
 // postcondition: changes made to accounts contained within
@@ -88,7 +94,15 @@ Account getAccount(int accountID);
 
 // precondition: valid customerID passed in
 // postcondition: list of accounts matching customerID returned
-//list<Account*> AccountServices::getCustomerAccounts(int customerID){}
+list<Account*> AccountServices::getCustomerAccounts(int customerID){
+
+	Customer customer(customerID, "password", "name", "address", "phoneNumber");
+	//Customer customer = (Customer*)(getUser(userID));
+	list<int> accountNumbers = customer.getAccounts();
+	list<Account*> accounts;
+	// retrieve the matching account for each of the the accountNumbers and add to accounts
+	return accounts;
+}
 
 
 

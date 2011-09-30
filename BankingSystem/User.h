@@ -11,6 +11,7 @@ class User
 public:
 	friend class BankClerk;
 	friend class Customer;
+	friend class UserServices;
 	
 	// constructor
 	// precondition: valid user details passed in

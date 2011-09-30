@@ -24,10 +24,7 @@ public:
 
 	// precondition: none
 	// postcondition: instanceFlag is set to false
-	~AccountServices(void){
-	
-		instanceFlag = false;
-	}
+	~AccountServices(void){}
 	// employs singleton pattern to ensure that there is only ever one
 	// AccountServices instance
 	// precondition: none
@@ -70,7 +67,6 @@ public:
 
 
 private:
-	static bool instanceFlag;	
 	static AccountServices* _accountServicesInstance;
 	// constructor
 	// precondition: none

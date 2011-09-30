@@ -72,6 +72,7 @@ list <int> Customer::getAccounts(void){
 // postcondition: accountID addded to accounts
 bool Customer::addAccount(int accountID){
 
+	_accounts.push_back(accountID);
 	return true;
 }
 // precondition: valid accountID passed in
@@ -80,13 +81,15 @@ bool Customer::addAccount(int accountID){
 bool Customer::removeAccount(int accountID){
 
 	_accounts.remove(accountID);
+	return true;
 }
 // precondition: none
 // postcondition: returns true if accountID is listed
 // in accounts, otherwise false
 bool Customer::hasAccount(int accountID){
 
-
+	//TODO add iterator code here
+	return true;
 }
 // precondition: none
 // postcondition: returns true if accounts is not empty

@@ -14,10 +14,7 @@ class UserServices
 {
 public:
 	enum userType { CUSTOMER, BANK_CLERK };
-	~UserServices(void){
-		
-		instanceFlag = false;
-	}
+	~UserServices(void){}
 	// employs singleton pattern to ensure that there is only ever one
 	// AccountServices instance
 	// precondition: none
@@ -46,16 +43,15 @@ public:
 	// postcondition: returns true if user matching userID is successfully
 	// deleted
 	bool deleteUser(int userID);
-	// precondition: valid user details passed in
+	// precondition: valid user userID and details passed in
 	// postcondition: old details are exchanged for new
-	void updateCustomerDetails(string details[]);
+	void updateCustomerDetails(int userID, string details[]);
 	// precondition: valid userID passed in
 	// postcondition: user matching userID is returned
-	User getUser(int userID);
+	User *getUser(int userID);
 
 private:
 	
-	static bool instanceFlag;	
 	static UserServices* _userServicesInstance;
 	
 	// precondition: none
