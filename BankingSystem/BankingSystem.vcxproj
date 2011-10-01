@@ -81,46 +81,35 @@
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="AccountServices.cpp" />
     <ClCompile Include="CreditAccount.cpp" />
+    <ClCompile Include="DataInterface.cpp" />
+    <ClCompile Include="DataMap.cpp" />
     <ClCompile Include="HomeLoanAccount.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="SavingsAccount.cpp" />
-    <ClCompile Include="BankingSystem.cpp" />
-    <ClCompile Include="Form1.cpp">
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-      <MinimalRebuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</MinimalRebuild>
-      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
-      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
-      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Async</ExceptionHandling>
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</CompileAsManaged>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      </PrecompiledHeader>
-      <MinimalRebuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</MinimalRebuild>
-      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Default</BasicRuntimeChecks>
-      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ProgramDatabase</DebugInformationFormat>
-      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
-    </ClCompile>
+    <ClCompile Include="TextFileDataSource.cpp" />
     <ClCompile Include="Transaction.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="UserServices.cpp" />
     <ClCompile Include="BankClerk.cpp" />
     <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
     <ClInclude Include="AccountServices.h" />
     <ClInclude Include="CreditAccount.h" />
+    <ClInclude Include="DataInterface.h" />
+    <ClInclude Include="DataMap.h" />
+    <ClInclude Include="DataSource.h" />
     <ClInclude Include="HomeLoanAccount.h" />
     <ClInclude Include="SavingsAccount.h" />
-    <ClInclude Include="Form1.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="resource.h" />
+    <ClInclude Include="TextFileDataSource.h" />
     <ClInclude Include="Transaction.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserServices.h" />
     <ClInclude Include="BankClerk.h" />
     <ClInclude Include="Customer.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="BankingSystem.rc" />

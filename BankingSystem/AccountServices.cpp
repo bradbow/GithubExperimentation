@@ -75,7 +75,7 @@ void AccountServices::closeAccount(int accountID){
 // postcondition: old details are replaced by new
 void AccountServices::changeAccountDetails(accountType type, string details[ ], int accountID){
 
-	Account *change = getAccount(accountID);
+	//Account *change = getAccount(accountID);
 
 }
 

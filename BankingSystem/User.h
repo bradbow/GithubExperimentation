@@ -9,6 +9,13 @@ using std::string;
 class User
 {
 public:
+
+	enum UserType
+	{
+		BANK_CLERK,
+		CUSTOMER
+	};
+
 	friend class BankClerk;
 	friend class Customer;
 	friend class UserServices;
@@ -23,10 +30,12 @@ public:
 	~User(void);
 	// precondition: none
 	// postcondition: userName returnded
-	int getUserName();
+	int getUserID();
 
 private:
-	int _userName;
+	int _userID;
 	string _password;
+	string _userName;
+	UserType m_utType;
 };
 #endif
