@@ -33,6 +33,7 @@ ipch/
 *.ncb
 *.opensdf
 *.sdf
+*.ipch
 
 # Visual Studio profiler
 *.psess
